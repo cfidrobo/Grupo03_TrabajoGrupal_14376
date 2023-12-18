@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Elementos - DOM</title>
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- CodeMirror CSS-->
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/lib/codemirror.css" />
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/theme/icecoder.css" />
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/theme/mbo.css" />
+  <!-- CodeMirror JS-->
+  <script src="../assets/codemirror-5.65.10/lib/codemirror.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/xml/xml.js"></script>
+  <script src="../assets/codemirror-5.65.10/addon/edit/closetag.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/javascript/javascript.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/css/css.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/htmlmixed/htmlmixed.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.9.1
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="../index.html">Grupo 07</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#intro">Introducción</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#methods">Métodos</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#components">Componentes</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html#elements">Elementos</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#html">HTML</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#css">CSS</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#forms">Formularios</a></li>
+
+          <li><a class="nav-link scrollto" href="../index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Elementos</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Elementos</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= ELEMENTS Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container postext">
+        <div class="row gy-4">
+          <div class="col-lg-10">
+            <h1 class="tittle">Elementos</h1>
+            <p>A menudo, con JavaScript, se desea manipular elementos HTML.
+              Para hacerlo, primero debemos que encontrar los elementos. Hay varias maneras de hacer esto:
+            </p>
+
+            <ul class="lis">
+              <li>Encontrar elementos HTML por <strong>ID</strong>.</li>
+              <li>Encontrar elementos HTML por <strong>nombre de etiqueta</strong>.</li>
+              <li>Encontrar elementos HTML por <strong>nombre de clase</strong>.</li>
+              <li>Encontrar elementos HTML mediante <strong>selectores CSS</strong>.</li>
+              <li>Encontrar elementos HTML por <strong>colecciones de objetos HTML</strong>.</li>
+            </ul>
+
+            <!-- Por nombre de ID -->
+            <h2 class="subtittle">Encontrar elementos HTML por ID</h2>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              En este ejemplo se encuentra el elemento con <strong>id="intro"</strong> con el método
+              <strong>document.getElementById()</strong>:<br>
+            <ul class="lis">
+              <li>Si se encuentra el elemento, el método devolverá el elemento como un objeto.</li>
+                <li>Si no se encuentra el elemento, el elemento contendrá <strong>null</strong>.</li>
+            </ul>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>Encontrando elementos HTML por ID</h2>
+
+  <p id="intro">Uso de los elmentos de JavaScript HTML DOM</p>
+  <p>Este ejemplo demuestra el uso del metodo: <b>getElementsById</b></p>
+
+  <p id="demo"></p>
+
+  <script>
+    // const elemento = document.getElementById("intro");
+    // document.getElementById("demo").innerHTML = "El texto que hay en el parrafo con el id='intro' es: " + elemento.innerHTML;
+
+    // Por motivos de ejecución en la página, no se puede usar el método anterior, por lo que se debe usar el método siguiente:
+    document.getElementById("demo").innerHTML = 
+    "El texto que hay en el parrafo con el id='intro' es: " + 
+    document.getElementById("intro").innerHTML;
+  </script>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview></iframe>
+            </div>
+            <br>
+            <p>
+              <strong>Nota:</strong> El método <strong>document.getElementById()</strong> solo devuelve el primer elemento con el ID especificado.
+              Si hay más de un elemento con el mismo ID, este método devolverá el primer elemento en el documento.
+            </p>
+            <br>
+
+            <!-- Por nombre de etiqueta -->
+            <h2 class="subtittle">Encontrar elementos HTML por nombre de etiqueta</h2>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              Este ejemplo encuentra el elemento con <strong>id="main"</strong> y luego encuentra todos las etiquetas <strong>&lt;p&gt;</strong> dentro del <strong>"main"</strong> con el método <strong>getElementsByTagName()</strong>:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+                        <div style="margin-left: 50px;">
+              <textarea id=code2 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>Encontrando elementos HTML por el nombre de la Etiqueta</h2>
+
+  <div id="main">
+    <p>Uso de los elmentos de JavaScript HTML DOM</p>
+    <p>Este ejemplo demuestra el uso del metodo: <b>getElementsByTagName</b></p>
+    <p>Hola mundo!</p>
+  </div>
+
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+
+  <script>
+
+    // const x = document.getElementById("main");
+    // const y = x.getElementsByTagName("p");
+    // document.getElementById("demo1").innerHTML = "El primer parrafo de indice 0 dentro del main es: " + y[0].innerHTML;
+    // document.getElementById("demo2").innerHTML = "El tercer parrafo de indice 2 dentro del main es: " + y[2].innerHTML;
+
+    // Por motivos de ejecución en la página, no se puede usar el método anterior, por lo que se debe usar el método siguiente:
+    document.getElementById("demo1").innerHTML = 
+    "El primer parrafo de indice 0 dentro del main es: " 
+    + document.getElementById("main").getElementsByTagName("p")[0].innerHTML;
+
+    document.getElementById("demo2").innerHTML = 
+    "El tercer parrafo de indice 2 dentro del main es: " 
+    + document.getElementById("main").getElementsByTagName("p")[2].innerHTML;
+  </script>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview2></iframe>
+            </div>
+            <br>
+
+            <!-- Por nombre de clase -->
+            <h2 class="subtittle">Encontrar elementos HTML por nombre de clase</h2>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              Este ejemplo devuelve una lista de todos los elementos con <strong>class="intro"</strong> con el método <strong>getElementsByClassName()</strong>:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+                        <div style="margin-left: 50px;">
+              <textarea id=code3 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>Encontrando elementos HTML por el nombre de la clase</h2>
+
+  <p>Uso de los elmentos de JavaScript HTML DOM</p>
+
+  <p class="intro">Hola mundo!</p>
+  <p class="intro">Este ejemplo demuestra el uso del metodo: <b>getElementsByClassName</b></p>
+
+  <p id="demo"></p>
+
+  <script>
+    // const clase = document.getElementsByClassName("intro");
+    // document.getElementById("demo").innerHTML = "El segundo parrafo de indice 1 con la clase 'intro': " + clase[1].innerHTML;
+
+    // Por motivos de ejecución en la página, no se puede usar el método anterior, por lo que se debe usar el método siguiente:
+    document.getElementById("demo").innerHTML = 
+    "El segundo parrafo de indice 1 con la clase 'intro': " 
+    + document.getElementsByClassName("intro")[1].innerHTML;
+  </script>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview3></iframe>
+            </div>
+            <br>
+
+            <!-- Mediante selectores CSS -->
+            <h2 class="subtittle">Encontrar elementos HTML mediante selectores CSS</h2>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              Este ejemplo devuelve una lista de todos los <strong>&lt;p&gt;</strong> elementos con <strong>class="intro"</strong> con el método <strong>querySelectorAll()</strong>:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+                        <div style="margin-left: 50px;">
+              <textarea id=code4 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>Encontrando elementos HTML mediate Selectores</h2>
+
+  <p id="intro">Uso de los elmentos de JavaScript HTML DOM</p>
+
+  <p class="intro">Hola mundo!</p>
+  <p class="intro">Este ejemplo demuestra el uso del metodo: <b>querySelectorAll</b></p>
+
+  <p id="demo"></p>
+
+  <script>
+    // const quer = document.querySelectorAll("p.intro");
+    // document.getElementById("demo").innerHTML =  "El primer parrafo de indice 0 con la clase 'intro' es: " + quer[0].innerHTML;
+
+    // Por motivos de ejecución en la página, no se puede usar el método anterior, por lo que se debe usar el método siguiente:
+    document.getElementById("demo").innerHTML =  
+    "El primer parrafo de indice 0 con la clase 'intro' es: " 
+    + document.querySelectorAll("p.intro")[0].innerHTML;
+  </script>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview4></iframe>
+            </div>
+            <br>
+
+            <!-- Por colecciones de objetos -->
+            <h2 class="subtittle">Encontrar elementos HTML por colecciones de objetos HTML</h2>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              Este ejemplo encuentra el elemento de formulario con <strong>id="frm1"</strong>, en la colección de formularios, y muestra todos los valores de los elementos:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+                        <div style="margin-left: 50px;">
+              <textarea id=code5 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>Encontrando elementos HTML por colecciones de objetos</h2>
+
+  <p id="intro">Uso de los elmentos de JavaScript HTML DOM</p>
+  <p>Este ejemplo encunetra los elemtos HTML usando <b>document.forms</b></p>
+
+  <form id="frm1">
+  Nombre: <input type="text" name="fname" value="Pedro"><br>
+  Apellido: <input type="text" name="lname" value="Perez"><br><br>
+  <input type="submit" value="Enviar">
+  </form>
+
+  <p>Valores de cada elemento en el formulario:</p>
+
+  <p id="demo"></p>
+
+  <script>
+    // const docu = document.forms["frm1"];
+    // let text = "";
+    // for (let i = 0; i < docu.length ;i++) {
+    //   text += docu.elements[i].value + "<br>";
+    // }
+    // document.getElementById("demo").innerHTML = text;
+
+    // Por motivos de ejecución en la página, no se puede usar el método anterior, por lo que se debe usar el método siguiente:
+    let text = "";
+    for (let i = 0; i < document.forms["frm1"].length ;i++) {
+      text += document.forms["frm1"].elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+
+  </script>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview5></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End ELEMENTS Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Grupo 07</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos de uso</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    var delay;
+
+    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor.setSize("500", "400");
+
+    editor.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor, 'preview'), 100);
+    });
+
+    var editor2 = CodeMirror.fromTextArea(document.getElementById('code2'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor2.setSize("500", "400");
+
+    editor2.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor2, 'preview2'), 100);
+    });
+
+    var editor3 = CodeMirror.fromTextArea(document.getElementById('code3'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor3.setSize("500", "400");
+
+    editor3.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor3, 'preview3'), 100);
+    });
+
+    var editor4 = CodeMirror.fromTextArea(document.getElementById('code4'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor4.setSize("500", "400");
+
+    editor4.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor4, 'preview4'), 100);
+    });
+
+    var editor5 = CodeMirror.fromTextArea(document.getElementById('code5'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor5.setSize("500", "400");
+
+    editor5.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor5, 'preview5'), 100);
+    });
+
+    function updatePreview(editor, preview) {
+      var editor = editor;
+      var preview = preview;
+      var previewFrame = document.getElementById(preview);
+      var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+      preview.open();
+      preview.write(editor.getValue());
+      preview.close();
+    }
+
+    setTimeout(updatePreview(editor, 'preview'), 100);
+    setTimeout(updatePreview(editor2, 'preview2'), 100);
+    setTimeout(updatePreview(editor3, 'preview3'), 100);
+    setTimeout(updatePreview(editor4, 'preview4'), 100);
+    setTimeout(updatePreview(editor5, 'preview5'), 100);
+  </script>
+
+</body>
+
+</html>

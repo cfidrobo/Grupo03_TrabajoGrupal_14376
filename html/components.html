@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Componentes - DOM</title>
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.9.1
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="../index.html">Grupo 07</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#intro">Introducción</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#methods">Métodos</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html#components">Componentes</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#elements">Elementos</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#html">HTML</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#css">CSS</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#forms">Formularios</a></li>
+
+          <li><a class="nav-link scrollto" href="../index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Componentes</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Componentes</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= COMPONENTS Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <h1 class="tittle">Componentes</h1>
+        <p>
+          El objeto del documento representa su página web.
+
+          Si desea acceder a cualquier elemento en una página HTML, siempre comienza accediendo al objeto del documento.
+
+          A continuación se muestran algunos ejemplos de cómo puede utilizar el objeto de documento para acceder y
+          manipular HTML.
+        </p><br>
+
+        <h2 class="subtittle">Encontrar elementos HTML</h2><br>
+
+        <table class="table table-bordered table-striped ">
+          <thead>
+            <tr class="active" style="text-align: center; border: 5px;">
+              <th>Método</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-info">
+              <td><strong>document.getElementById(id)</strong></td>
+              <td>Encuentra un elemento por el ID</td>
+            </tr>
+            <tr>
+              <td><strong>document.getElementsByTagName(name)</strong></td>
+              <td>Encuentra los elementos por el nombre de la etiqueta</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.getElementsByClassName(name)</strong></td>
+              <td>Encuentra por el nombre de la clase</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+
+        <h2 class="subtittle">Cambio de elementos HTML</h2><br>
+
+        <table class="table table-bordered table-striped ">
+          <thead>
+            <tr class="active" style="text-align: center; border: 5px;">
+              <th>Propiedad</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-info">
+              <td><strong>element.innerHTML = new html content</strong></td>
+              <td>Cambia el innerHTML de un elemento</td>
+            </tr>
+            <tr>
+              <td><strong>element.attribute = new value</strong></td>
+              <td>Cambia el valor del atributo de un elemento HTML</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>element.style.property = new style</strong></td>
+              <td>Cambia el estilo de un elemento HTML</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table table-bordered table-striped ">
+          <thead>
+            <tr class="active" style="text-align: center; border: 5px;">
+              <th>Método</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-info">
+              <td><strong>element.setAttribute(attribute, value)&nbsp;&nbsp;&nbsp;&nbsp;</strong></td>
+              <td>Cambia el valor del atributo de un elemento HTML</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+
+        <h2 class="subtittle">Adición y eliminación de elementos</h2><br>
+
+        <table class="table table-bordered table-striped ">
+          <thead>
+            <tr class="active" style="text-align: center; border: 5px;">
+              <th>Método</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-info">
+              <td><strong>document.createElement(element)</strong></td>
+              <td>Crea un elemento HTML</td>
+            </tr>
+            <tr>
+              <td><strong>document.removeChild(element)</strong></td>
+              <td>Elimina un elemento HTML</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.appendChild(element)</strong></td>
+              <td>Añade un elemento HTML</td>
+            </tr>
+            <tr>
+              <td><strong>document.replaceChild(new, old)</strong></td>
+              <td>Reemplaza un elemento HTML</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.write(text)</strong></td>
+              <td>Escribir en el flujo de salida HTML</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+
+        <h2 class="subtittle">Adición de controladores de eventos</h2><br>
+
+        <table class="table table-bordered table-striped ">
+          <thead>
+            <tr class="active" style="text-align: center; border: 5px;">
+              <th>Método</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-info">
+              <td><strong>document.getElementById(id).onclick = function(){code}</strong></td>
+              <td>Agregar código de controlador de eventos a un evento onclick</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+
+        <h2 class="subtittle">Encontrar objetos HTML</h2><br>
+
+        <table class="table table-bordered table-striped ">
+          <thead>
+            <tr class="active" style="text-align: center; border: 5px;">
+              <th>Propiedad</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-info">
+              <td><strong>document.baseURI</strong></td>
+              <td>Devuelve el URI base absoluto del documento.</td>
+            </tr>
+            <tr>
+              <td><strong>document.doctype</strong></td>
+              <td>Devuelve el tipo de documento del documento.</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.documentElement</strong></td>
+              <td>Devuelve el elemento &lt;html&gt;</td>
+            </tr>
+            <tr>
+              <td><strong>document.documentMode</strong></td>
+              <td>Devuelve la URI del documento</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.embeds</strong></td>
+              <td>Devuelve todos los elementos &lt;embed&gt;</td>
+            </tr>
+            <tr>
+              <td><strong>document.head</strong></td>
+              <td>Devuelve todos los elementos &lt;head&gt;</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.implementation</strong></td>
+              <td>Devuelve la implementación DOM</td>
+            </tr>
+            <tr>
+              <td><strong>document.inputEncoding</strong></td>
+              <td>Devuelve la codificación del documento (conjunto de caracteres)</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.lastModified</strong></td>
+              <td>Devuelve la fecha y hora en que se actualizó el documento.</td>
+            </tr>
+            <tr>
+              <td><strong>document.readyState</strong></td>
+              <td>Devuelve el estado (de carga) del documento</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.scripts</strong></td>
+              <td>Devuelve todos los elementos &lt;script&gt;</td>
+            </tr>
+            <tr>
+              <td><strong>document.strictErrorChecking</strong></td>
+              <td>Devuelve si se aplica la comprobación de errores</td>
+            </tr>
+            <tr class="table-info">
+              <td><strong>document.title</strong></td>
+              <td>Devuelve todos los elementos &lt;title&gt;</td>
+            </tr>
+            <tr>
+              <td><strong>document.URL</strong></td>
+              <td>Devuelve la URL completa del documento</td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br>
+
+
+      </div>
+      </div>
+    </section><!-- End COMPONENTS Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Grupo 07</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos de uso</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

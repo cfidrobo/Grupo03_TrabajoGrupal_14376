@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>CSS - DOM</title>
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- CodeMirror CSS-->
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/lib/codemirror.css" />
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/theme/icecoder.css" />
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/theme/mbo.css" />
+  <!-- CodeMirror JS-->
+  <script src="../assets/codemirror-5.65.10/lib/codemirror.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/xml/xml.js"></script>
+  <script src="../assets/codemirror-5.65.10/addon/edit/closetag.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/javascript/javascript.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/css/css.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/htmlmixed/htmlmixed.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.9.1
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="../index.html">Grupo 07</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#intro">Introducción</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#methods">Métodos</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#components">Componentes</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#elements">Elementos</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#html">HTML</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html#css">CSS</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#forms">Formularios</a></li>
+
+          <li><a class="nav-link scrollto" href="../index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>CSS</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>CSS</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= CSS Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container postext">
+        <div class="row gy-4">
+          <div class="col-lg-10">
+            <h1 class="tittle">Modificando el CSS</h1>
+
+            <!-- Changing HTML Style -->
+            <h2 class="subtittle">Modificando el Estilo del HTML</h2>
+            <p>
+              Para cambiar el estilo de un elemento HTML, se usa la siguiente sintaxis: <br>
+              >> document.getElementById(<i>id</i>).style.<i>propiedad</i> = <i>nuevo estilo</i>
+            </p>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              Este ejemplo cambia el estilo de la etiqueta <strong>&lt;p&gt;</strong>:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>Modificando el estilo del HTML</h2>
+
+  <p id="p1">Hola MUNDO!</p>
+  <p id="p2">HOLA MUNDO!!!</p>
+
+  <script>
+    document.getElementById("p2").style.color = "blue";
+    document.getElementById("p1").style.fontFamily = "Arial";
+    document.getElementById("p1").style.fontSize = "larger";
+  </script>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview></iframe>
+            </div>
+            <br>
+
+            <!-- Using Events -->
+            <h2 class="subtittle">Usando Eventos</h2>
+            <p>
+              El HTML DOM le permite ejecutar código cuando ocurre un evento.<br>
+              Los eventos son generados por el navegador cuando "le suceden cosas" a los elementos HTML:
+              <ul class="lis">
+                <li>Cuando se hace click en un elemento</li>
+                <li>Cuando la página se ha cargado</li>
+                <li>Cuando los campos de una entrada se cambian</li>
+              </ul>
+            </p>
+            <p>
+              <strong>Ejemplo 1:</strong><br>
+              Este ejemplo cambia el estilo del elemento HTML con <strong>id="id1"</strong>, cuando el usuario hace click en un botón:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code2 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1 id="id1">EJEMPLO 1 - Cambio de color</h1>
+
+  <button type="button" onclick="document.getElementById('id1').style.color = 'red'">
+  Cambiar Color</button>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview2></iframe>
+            </div>
+            <br>
+
+            <p>
+              <strong>Ejemplo 2:</strong><br>
+              Este ejemplo cambia la visiblidad de un elemento por el <strong>id="p1"</strong>:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea readonly id=code3 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>EJEMPLO 2 - Visibilidad</h2>
+
+  <p id="p1">
+    Esto es un texto. 
+    Hola mundo!.
+    La WEB. 
+    El mundo de la programación.
+    </p>
+
+    <input type="button" value="Esconder Texto" 
+    onclick="document.getElementById('p1').style.visibility='hidden'">
+    <input type="button" value="Mostrar Texto" 
+    onclick="document.getElementById('p1').style.visibility='visible'">
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview3></iframe>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section><!-- End CSS Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Grupo 07</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos de uso</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    var delay;
+
+    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor.setSize("500", "400");
+
+    editor.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor, 'preview'), 100);
+    });
+
+    var editor2 = CodeMirror.fromTextArea(document.getElementById('code2'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor2.setSize("500", "400");
+
+    editor2.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor2, 'preview2'), 100);
+    });
+
+    var editor3 = CodeMirror.fromTextArea(document.getElementById('code3'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor3.setSize("500", "400");
+
+    editor3.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor3, 'preview3'), 100);
+    });
+
+    function updatePreview(editor, preview) {
+      var editor = editor;
+      var preview = preview;
+      var previewFrame = document.getElementById(preview);
+      var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+      preview.open();
+      preview.write(editor.getValue());
+      preview.close();
+    }
+
+    setTimeout(updatePreview(editor, 'preview'), 100);
+    setTimeout(updatePreview(editor2, 'preview2'), 100);
+    setTimeout(updatePreview(editor3, 'preview3'), 100);
+
+  </script>
+
+</body>
+
+</html>

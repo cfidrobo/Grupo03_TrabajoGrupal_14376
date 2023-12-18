@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Métodos - DOM</title>
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- CodeMirror CSS-->
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/lib/codemirror.css" />
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/theme/icecoder.css" />
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/theme/mbo.css" />
+  <!-- CodeMirror JS-->
+  <script src="../assets/codemirror-5.65.10/lib/codemirror.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/xml/xml.js"></script>
+  <script src="../assets/codemirror-5.65.10/addon/edit/closetag.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/javascript/javascript.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/css/css.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/htmlmixed/htmlmixed.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.9.1
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="../index.html">Grupo 07</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#intro">Introducción</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html#methods">Métodos</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#components">Componentes</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#elements">Elementos</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#html">HTML</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#css">CSS</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#forms">Formularios</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Métodos</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Métodos</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= METHODS Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container postext">
+        <div class="row gy-4">
+          <div class="col-lg-10">
+            <h1 class="tittle">Métodos</h1>
+            <p>
+              Se puede acceder al HTML DOM con JavaScript y con otros lenguajes de programación.<br>
+              En el DOM, todos los elementos HTML se definen como objetos .<br>
+              La interfaz de programación son las propiedades y métodos de cada objeto.<br>
+              Una <strong>propiedad</strong> es un valor que puede obtener o establecer como cambiar el contenido de un elemento HTML.<br>
+              Un <strong>método</strong> es una acción que puede realizar puede ser agregar o eliminar un elemento HTML.
+            </p>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              Para ejemplo vamos a usar el siguiente código HTML:
+              Consiste en usar el metodo <strong>getElementById</strong> junto con el metodo <strong>innerHTML</strong> para cambiar el contenido de un elemento HTML.<br>
+              <ul class="lis">
+                <li>
+                  La propiedad <strong>innerHTML</strong> es útil para obtener o reemplazar el contenido de los elementos HTML.
+                </li>
+              </ul>
+            </p>
+
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>        
+  <h2>Usando getElementById junto con innerHTML</h2>
+       
+  <p id="demo">Este texto se cambia por: Hola Mundo!</p>
+          
+  <script>
+    document.getElementById("demo").innerHTML = "Hola Mundo!";
+  </script>
+          
+</body>
+</html>
+              </textarea>
+              <iframe id=preview></iframe>
+            </div>
+            <br>
+
+              <h2 class="subtittle">Tipos de Métodos</h2>
+              <ul >
+                <li> <strong>document.getElementById(id)</strong></li>
+                <p>La propiedad id de la interfaz Element representa el identificador del elemento, reflejando el
+                  atributo global id. Si el valor de id no es la cadena vacía, debe ser único en un documento.
+                  <br>
+                  La identificación se usa a menudo con getElementById() para recuperar un elemento en particular. Otro
+                  caso común es usar la ID de un elemento como selector al diseñar el documento con CSS.
+                </p>
+                <li> <strong>document.getElementsByClassName(nombreDeClase)</strong></li>
+                <p>
+                  El método getElementsByClassName de la interfaz Document devuelve un objeto similar a una matriz de
+                  todos los elementos secundarios que tienen todos los nombres de clase dados.
+                  <br>
+                  Cuando se llama al objeto del documento, se busca en el documento completo, incluido el nodo raíz.
+                  También puede llamar a getElementsByClassName() en cualquier elemento; devolverá solo los elementos
+                  que son descendientes del elemento raíz especificado con los nombres de clase dados.
+                </p>
+                <li> <strong>document.getElementsByTagName(nombreDeEtiqueta)</strong></li>
+                <p>
+                  El método getElementsByTagName de la interfaz Document devuelve una HTMLCollection de elementos con el
+                  nombre de etiqueta dado.
+                  <br>
+                  Se busca en el documento completo, incluido el nodo raíz. La HTMLCollection devuelta está activa, lo
+                  que significa que se actualiza automáticamente para mantenerse sincronizada con el árbol DOM sin tener
+                  que volver a llamar a document.getElementsByTagName().
+                </p>
+                <li> <strong>document.querySelector(selectorCss)</strong></li>
+                <p>
+                  El método de documento querySelector() devuelve el primer elemento dentro del documento que coincide
+                  con el selector o grupo de selectores especificado. Si no se encuentran coincidencias, se devuelve
+                  nulo.
+                </p>
+                <li> <strong>document.querySelectorAll(selectorCss)</strong></li>
+                <p>
+                  El método Document querySelectorAll() devuelve una NodeList estática (no activa) que representa una
+                  lista de los elementos del documento que coinciden con el grupo de selectores especificado.
+                </p>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- End METHODS Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Grupo 07</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos de uso</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    var delay;
+
+    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+          mode: 'text/html',
+          lineNumbers: true,
+          theme: 'mbo',
+          autoCloseTags: true
+    });
+    editor.setSize("500", "400");
+
+    editor.on("change", function () {
+    clearTimeout(delay);
+    delay = setTimeout(updatePreview(), 100);
+    });
+
+    function updatePreview() {
+        var previewFrame = document.getElementById('preview');
+        var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+        preview.open();
+        preview.write(editor.getValue());
+        preview.close();
+    }
+
+    setTimeout(updatePreview, 100);
+</script>
+
+</body>
+
+</html>

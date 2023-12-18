@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;    margin: 0;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Bordes más sutiles */
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    color: #0056b3; /* Color principal para los títulos */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Texto más oscuro para mejor contraste */
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #0056b3; /* Color principal para bordes */
+    border-radius: 4px;
+    background-color: #fff; /* Fondo blanco para los inputs */
+    color: #333; /* Color del texto */
+}
+
+button {
+    background-color: #0056b3; /* Botón con el color principal */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+button:hover {
+    background-color: #003a82; /* Un tono más oscuro del color principal para el hover */
+}
+
+/* Estilos para el calendario */
+.calendario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: row; /* Cambiado de column a row */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+}
+
+
+.dia {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff; /* Fondo blanco para los días */
+    color: #333; /* Texto oscuro para los días */
+    border: 1px solid #ccc; /* Bordes sutiles para los días */
+}
+
+.disponible {
+    background-color: #fff; /* Fondo blanco para días disponibles */
+}
+
+.ocupado {
+    background-color: #e74c3c; /* Color para días ocupados */
+    color: #fff;
+}
+
+.seleccionado {
+    background-color: #0056b3; /* Fondo del color principal para día seleccionado */
+    color: #fff;
+}
+
+/* Nuevos estilos para horas */
+.horas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.titulo-horas {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; /* Texto oscuro para mejor contraste */
+}
+
+.hora {
+    width: 48%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Bordes sutiles para las horas */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff; /* Fondo blanco para las horas */
+    color: #333; /* Texto oscuro para las horas */
+}
+
+.hora.ocupada {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.hora:hover {
+    background-color: #0056b3; /* Fondo del color principal para hora al pasar el mouse */
+    color: #fff;
+}
+
+.contenedor-calendario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navegacion-calendario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.dias-semana, .calendario {
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.dias-semana div, .calendario .dia {
+    min-width: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Estilo para los días de la semana (Lun, Mar, Mie, etc.) */
+.dias-semana div {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.horarios-disponibles {
+    display: none; /* Oculto por defecto */
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.horarios-disponibles.visible {
+    display: flex; /* Se muestra cuando un día está seleccionado */
+}

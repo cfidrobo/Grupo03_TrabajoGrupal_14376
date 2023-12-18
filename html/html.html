@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HTML - DOM</title>
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- CodeMirror CSS-->
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/lib/codemirror.css" />
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/theme/icecoder.css" />
+  <link rel="stylesheet" href="../assets/codemirror-5.65.10/theme/mbo.css" />
+  <!-- CodeMirror JS-->
+  <script src="../assets/codemirror-5.65.10/lib/codemirror.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/xml/xml.js"></script>
+  <script src="../assets/codemirror-5.65.10/addon/edit/closetag.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/javascript/javascript.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/css/css.js"></script>
+  <script src="../assets/codemirror-5.65.10/mode/htmlmixed/htmlmixed.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.9.1
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="../index.html">Grupo 07</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="../assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#intro">Introducción</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#methods">Métodos</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#components">Componentes</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#elements">Elementos</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html#html">HTML</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#css">CSS</a></li>
+          <li><a class="nav-link scrollto" href="../index.html#forms">Formularios</a></li>
+
+          <li><a class="nav-link scrollto" href="../index.html#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>HTML</h2>
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>HTML</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= HTML Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container postext">
+        <div class="row gy-4">
+          <div class="col-lg-10">
+            <h1 class="tittle">Modificando el HTML</h1>
+
+            <!-- Changing HTML Content -->
+            <h2 class="subtittle">Modificando el Contenido del HTML</h2>
+            <p>
+              La forma más sencilla de modificar el contenido de un elemento HTML es con la propiedad: <strong>innerHTML</strong>. <br>
+              Para cambiar el contenido de un elemento HTML, se usa la siguiente sintaxis: <br>
+              >> document.getElementById(<i>id</i>).innerHTML = <i>nuevo HTML</i>
+            </p>
+            <p>
+              <strong>Ejemplo 1:</strong><br>
+              Este ejemplo cambia el contenido de la etiqueta <strong>&lt;p&gt;</strong>:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>EJEMPLO 1 - Modificando el Contenido del HTML</h2>
+
+  <p id="p1">Hola MUNDO!</p>
+
+  <script>
+    document.getElementById("p1").innerHTML = "Nuevo texto!";
+  </script>
+
+<p>El parrafo ha sido cambiado por un script.</p>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview></iframe>
+            </div>
+            <br>
+            <p>
+              <strong>Ejemplo 2:</strong><br>
+              Este ejemplo cambia el contenido de la etiqueta <strong>&lt;h1&gt;</strong>:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code2 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1 id="id01">JavaScript DOM encabezado</h1>
+  <h2>EJEMPLO 2 - Modificando el Contenido del HTML</h2>
+
+  <script>
+    // const elemento = document.getElementById("id01");
+    // elemento.innerHTML = "Nuevo Título";
+
+    // Por motivos de ejecución en la página, no se puede usar el método anterior, por lo que se debe usar el método siguiente:
+    document.getElementById("id01").innerHTML ="Nuevo Título";
+  </script>
+
+<p>JavaScript cambio "JavaScript DOM encabezado" por "Nuevo Título".</p>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview2></iframe>
+            </div>
+            <br>
+
+            <!-- Changing the Value of an Attribute -->
+            <h2 class="subtittle">Cambiar el valor de un atributo</h2>
+            <p>
+              Para cambiar el valor de un atributo HTML, se usa la siguiente sintaxis: <br>
+              >> document.getElementById(<i>id</i>).<i>attribute</i> = <i>nuevo valor</i>
+            </p>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              Este ejemplo cambia el valor del atributo <strong>src</strong> de la etiqueta <strong>&lt;img&gt;</strong>:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code3 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>Cambiar el valor de un atributo</h2>
+
+  <img id="myImage" src="../assets/img/DOM/programacion.png" width="160" height="auto">
+
+  <script>
+    document.getElementById("myImage").src = "../assets/img/DOM/website-development.png";
+  </script>
+
+  <p>JavaScript cambio la imagen:<br>
+    La primera imagen es de programación (<i>programacion.png</i>), 
+    la segunda imagen es de desarrollo web (<i>website-development.png</i>).</p>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview3></iframe>
+            </div>
+            <br>
+
+            <!-- Dynamic HTML content -->
+            <h2 class="subtittle">Contenido HTML dinámico</h2>
+            <p>
+              JavaScript puede crear contenido HTML dinámico:
+            </p>
+            <p>
+              <strong>Ejemplo:</strong><br>
+              Este ejemplo se utiliza la funcion <strong>Date()</strong> para mostrar la fecha actual:<br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code4 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>Contenido HTML dinámico</h2>
+
+  <p id="intro">Usando JavaScript, la funcion <strong>Date()</strong> para crear contenido HTML dinámico</p>
+
+  <p id="demo"></p>
+
+  <script>
+    document.getElementById("demo").innerHTML = "Fecha: " + Date();
+  </script>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview4></iframe>
+            </div>
+            <br>
+
+            <!-- document.write() -->
+            <h2 class="subtittle">document.write()</h2>
+            <p>
+              En JavaScript, <strong>document.write()</strong> se puede usar para escribir directamente en el flujo de salida HTML:<br>
+            </p>
+            <p>
+              <strong>Ejemplo:</strong><br>
+            </p>
+            <center class="msgg">Cualquier cambio que se realice, se reflejará automáticamente</center>
+            <div style="margin-left: 50px;">
+              <textarea id=code5 name=code>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>document.write()</h2>
+
+  <p>Se muestra el document.write() en el flujo de salida HTML,
+    en este caso el script esta debajo de este parrafo</p>
+
+  <script>
+    document.write("<h1>Este es un encabezado por document.write</h1>" + "Tambien se incluyó la fecha: " +Date());
+  </script>
+
+  <p>Otro Parrafo</p>
+
+</body>
+</html>
+              </textarea>
+              <iframe id=preview5></iframe>
+            </div>
+            <br>
+            <p>
+              <strong>Nota:</strong> <br>
+              <strong>document.write()</strong> debe usarse solo para pruebas. No debe usarse en un documento real porque reemplazará todo el contenido HTML.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End HTML Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Grupo 07</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos de uso</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+  <script>
+    var delay;
+
+    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor.setSize("500", "400");
+
+    editor.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor, 'preview'), 100);
+    });
+
+    var editor2 = CodeMirror.fromTextArea(document.getElementById('code2'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor2.setSize("500", "400");
+
+    editor2.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor2, 'preview2'), 100);
+    });
+
+    var editor3 = CodeMirror.fromTextArea(document.getElementById('code3'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor3.setSize("500", "400");
+
+    editor3.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor3, 'preview3'), 100);
+    });
+
+    var editor4 = CodeMirror.fromTextArea(document.getElementById('code4'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor4.setSize("500", "400");
+
+    editor4.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor4, 'preview4'), 100);
+    });
+
+    var editor5 = CodeMirror.fromTextArea(document.getElementById('code5'), {
+      mode: 'text/html',
+      lineNumbers: true,
+      theme: 'mbo',
+      autoCloseTags: true
+    });
+    editor5.setSize("500", "400");
+
+    editor5.on("change", function () {
+      clearTimeout(delay);
+      delay = setTimeout(updatePreview(editor5, 'preview5'), 100);
+    });
+
+    function updatePreview(editor, preview) {
+      var editor = editor;
+      var preview = preview;
+      var previewFrame = document.getElementById(preview);
+      var preview = previewFrame.contentDocument || previewFrame.contentWindow.document;
+      preview.open();
+      preview.write(editor.getValue());
+      preview.close();
+    }
+
+    setTimeout(updatePreview(editor, 'preview'), 100);
+    setTimeout(updatePreview(editor2, 'preview2'), 100);
+    setTimeout(updatePreview(editor3, 'preview3'), 100);
+    setTimeout(updatePreview(editor4, 'preview4'), 100);
+    setTimeout(updatePreview(editor5, 'preview5'), 100);
+  </script>
+
+</body>
+
+</html>
